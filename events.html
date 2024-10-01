@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>School</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Elearn project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/news.css">
+<link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<ul class="top_bar_contact_list">
+									<li><div class="question">Have any questions?</div></li>
+									<li>
+										<div>(009) 35475 6688933 32</div>
+									</li>
+									<li>
+										<div>info@elaerntemplate.com</div>
+									</li>
+								</ul>
+								<div class="top_bar_login ml-auto">
+									<ul>
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Login</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<div class="logo_content d-flex flex-row align-items-end justify-content-start">
+										<div class="logo_img"><img src="images/logo.png" alt=""></div>
+										<div class="logo_text">learn</div>
+									</div>
+								</a>
+							</div>
+							<nav class="main_nav_contaner ml-auto">
+								<ul class="main_nav">
+									<li class=""><a href="index.html">home</a></li>
+									<li class="dropdown" > 
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Announcement</a>
+										<ul class="dropdown-menu">
+											<li><a href="news.html" >News</a></li>
+											<li ><a href="notice.html" class="active">Notice</a></li>
+											<li><a href="holiday.html">Holiday</a></li>
+										</ul>
+									</li>
+									<li class="active"><a href="events.html">Events</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="staff.html">Staff</a></li>
+									<li><a href="faq.html">FAQ's</a></li>
+									<li><a href="contact.html">contact</a></li>
+								</ul>
+								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+		
+								<!-- Hamburger -->
+								<div class="hamburger menu_mm">
+									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style>
+				.main_nav li {
+				position: relative;
+			}
+			
+			.dropdown-menu {
+				display: none;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background-color: #fff;
+				padding: 10px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				list-style: none;
+			}
+			
+			.dropdown-menu li {
+				margin: 0;
+			}
+			
+			.dropdown:hover .dropdown-menu {
+				display: block;
+			}
+			.menu_mm .dropdown_menu_mm {
+				display: none;
+				position: absolute;
+				top: 100%;
+				right: 0;
+				background-color: #fff;
+				box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+				padding: 0;
+				list-style: none;
+				z-index: 999;
+			}
+			
+			.menu_mm .dropdown:hover .dropdown_menu_mm {
+				display: block;
+			}
+			
+			.dropdown_menu_mm li {
+				text-align: left;
+				padding: 10px 20px;
+			}
+			
+			.dropdown_menu_mm li a {
+				color: #333;
+				text-decoration: none;
+			}
+			
+			.dropdown_menu_mm li:hover {
+				background-color: #f1f1f1;
+			}
+			
+			</style>
+		</div>
+
+		<!-- Header Search Panel -->
+		<div class="header_search_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+							<form action="#" class="header_search_form">
+								<input type="search" class="search_input" placeholder="Search" required="required">
+								<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>			
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container">
+			<div class="menu_close">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="search">
+			<form action="#" class="header_search_form menu_mm">
+				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="index.html">Home</a></li>
+				<li class="menu_mm dropdown">
+					<a href="#">Announcement</a>
+					<ul class="dropdown_menu_mm">
+						<li><a href="news.html">News</a></li>
+						<li><a href="notice.html">Notice</a></li>
+						<li><a href="holiday.html">Holiday</a></li>
+					</ul>
+				</li>
+				<li class="menu_mm"><a href="gallery.html">Gallery</a></li>
+				<li class="menu_mm"><a href="staff.html">Staff</a></li>
+				<li class="menu_mm"><a href="faq.html">FAQ's</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="menu_extra">
+			<div class="menu_phone"><span class="menu_title">phone:</span>(009) 35475 6688933 32</div>
+			<div class="menu_social">
+				<span class="menu_title">follow us</span>
+				<ul>
+					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<!-- Background image artist https://unsplash.com/@thepootphotographer -->
+		<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/news.jpg" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content text-center">
+							<div class="home_title">Events</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li>News</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .notice_post_image {
+            max-height: 300px;
+            overflow: hidden;
+        }
+
+        .notice_post_image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .notice_post_image img:hover {
+            transform: scale(1.05);
+        }
+
+        .notice_post_body {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .notice_post_body:hover {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .timer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+
+        .timer .time {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .notice_section {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .notice_post_body {
+                padding: 15px;
+            }
+
+            .timer {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+
+<div class="events-section py-5"></div>
+    <div class="container">
+        <h1 class="text-center mb-5">Upcoming Events</h1>
+        
+        <div class="row">
+            <!-- Event Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="event-card card">
+                    <img src="./images/events (2).png" class="card-img-top img-fluid" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Annual Sports Day</h5>
+                        <p class="card-text">Join us for a fun-filled sports day on <strong>October 10, 2024</strong>. Students will compete in various sports activities.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Date: October 10, 2024</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="event-card card">
+                    <img src="./images/events (3).png" class="card-img-top img-fluid" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Science Exhibition</h5>
+                        <p class="card-text">Our annual science exhibition will showcase innovative projects created by students. Don't miss it!</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Date: November 5, 2024</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="event-card card">
+                    <img src="./images/events (4).png" class="card-img-top img-fluid" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Winter Carnival</h5>
+                        <p class="card-text">Celebrate the winter season with our school carnival on <strong>December 20, 2024</strong>. Games, food stalls, and much more!</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Date: December 20, 2024</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Past Events Section -->
+        <h2 class="text-center mb-5 mt-5">Past Events</h2>
+        
+        <div class="row">
+            <!-- Past Event Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="event-card card">
+                    <img src="./images/events (5).png" class="card-img-top img-fluid" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Independence Day Celebration</h5>
+                        <p class="card-text">We celebrated India's Independence Day with a flag-hoisting ceremony, cultural performances, and a speech competition.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Date: August 15, 2024</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Event Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="event-card card">
+                    <img src="./images/events (6).png" class="card-img-top img-fluid" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Teacher's Day Celebration</h5>
+                        <p class="card-text">Students organized various performances and activities to honor and appreciate our teachers.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Date: September 5, 2024</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Past Event Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="event-card card">
+                    <img src="./images/events (1).png" class="card-img-top img-fluid" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Art & Craft Competition</h5>
+                        <p class="card-text">Our students displayed incredible creativity at this year's Art & Craft competition.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Date: July 10, 2024</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Custom Styles for Event Cards */
+.event-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    .events-section h1, .events-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card img {
+        height: auto;
+    }
+}
+
+    </style>
+</div>
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!-- About -->
+				<div class="col-lg-3 footer_col">
+					<div class="footer_about">
+						<div class="logo_container">
+							<a href="#">
+								<div class="logo_content d-flex flex-row align-items-end justify-content-start">
+									<div class="logo_img"><img src="images/logo.png" alt=""></div>
+									<div class="logo_text">learn</div>
+								</div>
+							</a>
+						</div>
+						<div class="footer_about_text">
+							<p>Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar.</p>
+						</div>
+						<div class="footer_social">
+							<ul>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						
+						<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Deltateam</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 footer_col">
+					<div class="footer_links">
+						<div class="footer_title">Quick menu</div>
+						<ul class="footer_list">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="staff.html">Staff</a></li>
+							<li><a href="holiday.html">Holiday</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<!-- <li><a href="#">Facts</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 footer_col">
+					<div class="footer_links">
+						<div class="footer_title">Useful Links</div>
+						<ul class="footer_list">
+							<li><a href="notice.html">Notice</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="faq.html">FAQ's</a></li>
+							<!-- <li><a href="#">Links</a></li>
+							<li><a href="#">FAQ</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 footer_col">
+					<div class="footer_contact">
+						<div class="footer_title">Contact Us</div>
+						<div class="footer_contact_info">
+							<div class="footer_contact_item">
+								<div class="footer_contact_title">Address:</div>
+								<div class="footer_contact_line">1481 Creekside Lane Avila Beach, CA 93424</div>
+							</div>
+							<div class="footer_contact_item">
+								<div class="footer_contact_title">Phone:</div>
+								<div class="footer_contact_line">+53 345 7953 32453</div>
+							</div>
+							<div class="footer_contact_item">
+								<div class="footer_contact_title">Email:</div>
+								<div class="footer_contact_line">yourmail@gmail.com</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/news.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
